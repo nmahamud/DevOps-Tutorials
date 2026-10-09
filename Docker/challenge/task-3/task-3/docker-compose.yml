@@ -1,0 +1,6 @@
+services:
+  web:
+    image: nmahamud/devops-tests:1
+    container_name: reactApp
+    ports:
+      - "3000:3000"
