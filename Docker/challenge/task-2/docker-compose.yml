@@ -1,0 +1,16 @@
+services:
+  web1:
+    build: .
+    container_name: server1
+    ports:
+      - "9090:80"
+    volumes:
+      - ./vol:/usr/share/nginx/html
+  
+  web2:
+    build: .
+    container_name: server2
+    ports:
+      - "8080:80"
+    volumes:
+      - ./vol:/usr/share/nginx/html
